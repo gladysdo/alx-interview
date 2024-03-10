@@ -1,15 +1,4 @@
 #!/usr/bin/python3
-"""
-Take a number of rows to be printed, lets assume it to be n
-Make outer iteration i from 0 to n times to print the rows.
-Make inner iteration for j from 0 to (N – 1).
-Print single blank space ” “.
-Close inner loop (j loop) //its needed for left spacing.
-Make inner iteration for j from 0 to i.
-Print nCr of i and j.
-Close inner loop.
-"""
-
 def pascal_triangle(n):
     """
     Generate Pascal's Triangle up to the n number of rows.
