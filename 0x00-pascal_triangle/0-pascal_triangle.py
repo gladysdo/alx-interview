@@ -8,9 +8,11 @@ Close inner loop (j loop) //its needed for left spacing.
 Make inner iteration for j from 0 to i.
 Print nCr of i and j.
 Close inner loop.
-Print newline character () after each inner iteration
+"""
 
-Generate Pascal's Triangle up to the specified number of rows.
+def pascal_triangle(n):
+    """
+    Generate Pascal's Triangle up to the n number of rows.
 
     Args:
     - n (int): The number of rows to generate in Pascal's Triangle.
@@ -18,10 +20,8 @@ Generate Pascal's Triangle up to the specified number of rows.
     Returns:
     - list of lists: A list of lists representing Pascal's Triangle.
                      Each inner list corresponds to a row in the triangle.
+    """
 
-"""
-
-def pascal_triangle(n):
     if n <= 0:
         return []
 
