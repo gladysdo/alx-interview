@@ -1,7 +1,20 @@
 #!/usr/bin/python3
+"""
+Take a number of rows to be printed, lets assume it to be n
+Make outer iteration i from 0 to n times to print the rows.
+Make inner iteration for j from 0 to (N – 1).
+Print single blank space ” “.
+Close inner loop (j loop) //its needed for left spacing.
+Make inner iteration for j from 0 to i.
+Print nCr of i and j.
+Close inner loop.
+Print newline character () after each inner iteration
+"""
+
+
 def pascal_triangle(n):
     """
-    Generate Pascal's Triangle up to the n number of rows.
+    Generate Pascal's Triangle up to the specified number of rows.
 
     Args:
     - n (int): The number of rows to generate in Pascal's Triangle.
@@ -10,7 +23,6 @@ def pascal_triangle(n):
     - list of lists: A list of lists representing Pascal's Triangle.
                      Each inner list corresponds to a row in the triangle.
     """
-
     if n <= 0:
         return []
 
